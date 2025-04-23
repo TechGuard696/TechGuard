@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/tecnologia.png" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/telefono.css">
+
+    <title>Inicio</title>
+</head>
+
+<body>
+    <!--header-->
+    <header class="header" id="header">
+        <nav class="nav container">
+          <a href="inicio.html" class="navL">
+            <img src="img/WhatsApp_Image_2025-03-25_at_21.13.21-removebg-preview.png" alt="favicon" class="navL-img">
+            TechGuard
+          </a>
+          <div class="navM" id="nav-menu">
+            <ul class="navList">
+              <li class="navItem">
+                <a href="inicio.html" class="navLink active-link">Inicio</a>
+              </li>
+              <li class="navItem">
+                <a href="nosotros.html" class="navLink">Nosotros</a>
+              </li>
+              <li class="navItem">
+                <a href="productos.html" class="navLink">Productos</a>
+              </li>
+              <li class="navItem">
+                <a href="soporte.html" class="navLink">Soporte</a>
+              </li>
+            </ul>
+            <div class="navclose" id="nav-close">
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+          <div class="navToggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </nav>
+      </header>
+
+    <main class="main">
+        <!--HOME-->
+        <section class="home container" id="home">
+            <div class="swiper home-swipper">
+                <div class="swiper-wrapper">
+                    <section>
+                        <div class="homecont grid">
+                            <div class="homedata">
+                                <h1 class="hometitle">Tech <br>Guard </h1>
+                                <h2>Protege tu estacionamiento con inteligencia</h2>
+                                <p class="homedes">
+                                    Somos una empresa que ofrece sistemas de seguridad con reconocimiento de matrículas y supervisión humana para estacionamientos privados.
+                                </p>
+                                <div class="homebut">
+                                    <a href="productos.html" class="button">Paquetes</a>
+                                    <a href="soporte.html" class="button">Contacto</a>
+                                </div>
+                            </div>
+                            <div class="homegroup">
+                                <img src="img/home1-img.png" alt="" class="homeimg">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!--CATEGORY-->
+        <section class="section category">
+
+            <h2 class="sectiontitle">Las mejores <br /> Categorias</h2>
+
+            <div class="categorycontainer container grid">
+
+                <div class="categorydata">
+                    <img src="img/categoria1.png" alt="Reconocimiento de Matrículas">
+                    <h3 class="categorytitle">Reconocimiento de Matrículas</h3>
+                    <p class="categorydescription">Tecnología avanzada para la identificación precisa de matrículas en tiempo real.</p>
+                </div>
+
+                <div class="categorydata">
+                    <img src="img/categoria2.png" alt="Monitoreo 24/7">
+                    <h3 class="categorytitle">Monitoreo 24/7</h3>
+                    <p class="categorydescription">Supervisión continua de tu estacionamiento para evitar accesos no autorizados.</p>
+                </div>
+
+                <div class="categorydata">
+                    <img src="img/categoria3.png" alt="Soporte Humano">
+                    <h3 class="categorytitle">Asistencia Humana</h3>
+                    <p class="categorydescription">Soporte humano 24/7 para resolver cualquier incidencia rápidamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--ABOUT-->
+        <section class="section about" id="about">
+
+            <div class="aboutcontainer container grid">
+                <img src="img/about-img.png" alt="" class="abouting">
+                <div class="aboutdata">
+                    <h2 class="sectiontitle abouttitle">Nosotros <br>Somos</h2>
+                    <p class="aboutdescription">TechGuard es una empresa especializada en ofrecer soluciones avanzadas de seguridad para estacionamientos privados. Combinamos tecnología de punta con un servicio de supervisión humana para garantizar el control de acceso y la protección de tus espacios.</p>
+                    <a href="nosotros.html" class="button">Ver mas</a>
+                </div>
+            </div>
+        </section>
+
+         <!--PRODUCTS-->
+         <section class="section product" id="product">
+            <h2 class="sectiontitle">Productos</h2>
+            <div class="productcontainer container grid">
+                <!-- Producto Guardian Basic -->
+                <div class="productcontent">
+                    <a href="productos.html#guardianbasic">
+                        <img src="img/productos1.png" alt="Guardian Basic" class="productimg">
+                        <h3 class="producttitle">Guardian Basic</h3>
+                        <span class="productsubtitle">Reconocimiento Básico</span>
+                        <span class="productprice">$100/mes</span>
+                        <button class="button productbutton" onclick="agregarProducto('Guardian Basic', 100)">
+                            <i class="bx bx-cart-alt producticon"></i>
+                        </button>                    
+                    </a>
+                </div>
+        
+                <!-- Producto Vision Guard -->
+                <div class="productcontent">
+                    <a href="productos.html#visionguard">
+                        <img src="img/productos2.png" alt="Vision Guard" class="productimg">
+                        <h3 class="producttitle">Vision Guard</h3>
+                        <span class="productsubtitle">Reconocimiento Avanzado</span>
+                        <span class="productprice">$500/mes</span>
+                        <button class="button productbutton" onclick="agregarProducto('Vision Guard', 500)">
+                        <i class="bx bx-cart-alt producticon"></i>
+                      </button>   
+                    </a>                 
+                </div>
+        
+                <!-- Producto TechShield -->
+                <div class="productcontent">
+                    <a href="productos.html#techshield">
+                        <img src="img/productos3.png" alt="TechShield" class="productimg">
+                        <h3 class="producttitle">TechShield</h3>
+                        <span class="productsubtitle">Monitoreo Avanzado</span>
+                        <span class="productprice">$2,000/mes</span>
+                        <button class="button productbutton" onclick="agregarProducto('TechShield', 2000)">
+                        <i class="bx bx-cart-alt producticon"></i>
+                        </button> 
+                    </a>                   
+                </div>
+        
+                <!-- Producto Guard360 -->
+                <div class="productcontent">
+                    <a href="productos.html#guard360">
+                        <img src="img/productos4.png" alt="Guard360" class="productimg">
+                        <h3 class="producttitle">Guard360</h3>
+                        <span class="productsubtitle">Control Avanzado y Consultoría</span>
+                        <span class="productprice">$10,000/mes</span>
+                        <button class="button productbutton" onclick="agregarProducto('Guard360', 10000)">
+                        <i class="bx bx-cart-alt producticon"></i>
+                        </button>     
+                    </a>               
+                </div>
+            </div>
+        </section>
+        
+
+        <!--DESCUENTOS-->
+        <section class="section discount">
+            <h2 class="sectiontitle">Descuentos Especiales</h2>
+            <div class="discount-container container">
+              <div class="discount-slider">
+                <div class="discount-slide">
+                  <h3>Descuento en Servicios de Reconocimiento de Matrículas</h3>
+                  <p>Obtén un 20% de descuento en la instalación de nuestro sistema de reconocimiento de matrículas para tu estacionamiento privado.</p>
+                  <button class="discount-button" onclick="location.href='productos.html'">Ver Más</button>
+                </div>
+                <div class="discount-slide">
+                  <h3>Descuento en Paquetes Empresariales</h3>
+                  <p>¡Lleva tu seguridad al siguiente nivel! Descuento del 15% en paquetes Vision Guard y TechShield.</p>
+                  <button class="discount-button" onclick="location.href='productos.html'">Ver Más</button>
+                </div>
+                <div class="discount-slide">
+                  <h3>Oferta Especial de Integración</h3>
+                  <p>Conecta tu sistema actual con nuestro software de reconocimiento de matrículas y obtén un 10% de descuento.</p>
+                  <button class="discount-button" onclick="location.href='productos.html'">Ver Más</button>
+                </div>
+              </div>
+            </div>
+          </section>          
+
+        <!--CORREO-->
+        <section class="section newsletter">
+            <div class="newslc container">
+              <h2 class="sectiontitle">Noticias</h2>
+              <p class="newsld">
+                Recibe las últimas noticias sobre nuestros productos y servicios.
+              </p>
+              <!-- 1) SIN ningún action para que no vaya a Formspree -->
+              <form id="newsletter-form">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Correo"
+                  class="newslin"
+                  required
+                />
+                <button type="submit" class="button2">Suscríbete</button>
+              </form>
+              <div id="response-message" class="hidden-message">
+                Gracias por suscribirte. ¡Revisa tu bandeja de entrada!
+              </div>
+            </div>
+          </section>
+                
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer section">
+        <div class="footercontainer container grid">
+            <div class="footercontent">
+                <a href="#" class="footerL">
+                    <img src="img/WhatsApp_Image_2025-03-25_at_21.13.21-removebg-preview.png" alt="TechGuard Logo" class="footer-img">
+                    TechGuard
+                </a>
+                <p class="footerdescription"><br>
+                    Protección inteligente para tu estacionamiento. Soluciones avanzadas con reconocimiento de matrículas y supervisión humana.
+                </p>
+    
+                <div class="footersocial">
+                    <a href="#" target="_blank" class="footersocial-link" title="Síguenos en Facebook">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footersocial-link" title="Síguenos en Instagram">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=teachguard7@gmail.com&su=atencion al cliente&body=Esto%20es%20una%20prueba" target="_blank" class="footersocial-link" title="Síguenos en Google">
+                        <i class="bx bxl-google"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class="bx bx-up-arrow-alt scrollupicon"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!--ENCABEZADO-->
+    <div class="encabezado">
+        <h6 id="footer-text">
+            Ⓒ 2025. TechGuard. Reservados todos los derechos mx | prod | 5921c999edda20d9a7ca637474539d734862014e |
+            <br>Realizado por Castro Bracamontes Sandra Marisol
+            <span id="fecha-hora"></span>
+        </h6>
+    </div>
+
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+  <!-- 3) Tu lógica de newsletter -->
+  <script src="js/newsletter.js"></script>
+  <!-- 4) Otros scripts de tu web -->
+  <script src="js/encabezado.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/descuento.js"></script>
+  <script src="js/horarios.js"></script>
+</body>
+</html>
