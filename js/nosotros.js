@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', () => {
     // Inicializar EmailJS con tu Public Key
-    emailjs.init('nUsPDywu6P1x5wTZF');
+    emailjs.init('ACzfn-t1fr278ILd_');
   
     const form = document.getElementById('newsletter-form');
     const resp = document.getElementById('response-message');
