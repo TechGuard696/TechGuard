@@ -13,8 +13,8 @@ resp.classList.add('hidden-message');
 form.addEventListener('submit', e => {
   e.preventDefault();
   emailjs.sendForm('service_bs9y55t', 'template_ulrur3z', form)
-    .then(function () {
-      console.log("Mensaje enviado por EmailJS ✅");
+   .then(function () {
+  console.log("Mensaje enviado por EmailJS ✅");
 
       // También enviar por Formspree (opcional)
    fetch(form.action, {
@@ -36,9 +36,9 @@ form.addEventListener('submit', e => {
 });
 
 
-    }, function (error) {
-      console.error("Fallo en EmailJS ❌", error);
-    });
+}, function (error) {
+  console.error("Fallo en EmailJS ❌", error);
+  console.error(error.text);  // Agrega esto para obtener más detalles del error
 });
 });
 
