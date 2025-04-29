@@ -1,46 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
   emailjs.init('ACzfn-t1fr278ILd_');
-  const form = document.getElementById('contact-form');
-  const resp = document.getElementById('respuesta');
-
-  if (!form) {
-    console.error('No encontré #contact-form');
-    return;
-  }
+const form = document.getElementById('contact-form');
+const resp = document.getElementById('respuesta');
+if (!form) {
+  console.error('No encontré #contact-form');
+  return;
+}
+resp.classList.add('hidden-message');
 
   resp.classList.add('hidden-message');
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    // Enviar con EmailJS usando el formulario directamente
-    emailjs.sendForm('service_bs9y55t', 'template_ulrur3z', form)
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  emailjs.sendForm('service_bs9y55t', 'template_ulrur3z', form)
     .then(function () {
       console.log("Mensaje enviado por EmailJS ✅");
 
       // También enviar por Formspree (opcional)
-      fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          console.log("Mensaje enviado por Formspree ✅");
-          resp.style.display = "block";
-          form.reset();
-        } else {
-          console.error("Error en Formspree ❌");
-        }
-      }).catch(error => {
-        console.error("Error de red en Formspree ❌", error);
-      });
+   fetch(form.action, {
+  method: "POST",
+  body: new FormData(form),
+  headers: {
+    'Accept': 'application/json'
+  }
+}).then(response => {
+  if (response.ok) {
+    console.log("Mensaje enviado por Formspree ✅");
+    resp.style.display = "block";
+    form.reset();
+  } else {
+    console.error("Error en Formspree ❌");
+  }
+}).catch(error => {
+  console.error("Error de red en Formspree ❌", error);
+});
+
 
     }, function (error) {
       console.error("Fallo en EmailJS ❌", error);
     });
-  });
+});
 });
 
     
