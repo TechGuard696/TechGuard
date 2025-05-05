@@ -66,7 +66,7 @@
           };
       
           // Enviar con EmailJS
-          emailjs.sendForm('service_bs9y55t','template_ulrur3z', templateParams)
+          emailjs.sendForm('service_bs9y55t', 'template_ulrur3z', form)
           .then(function () {
             console.log("Mensaje enviado por EmailJS ✅");
     
