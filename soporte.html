@@ -70,6 +70,7 @@
       </section>
 
 <!-- Atención 24/7 -->
+<!-- Atención 24/7 -->
 <section class="section">
   <h2 class="sectiontitle" id="contact">📞 Canales de Contacto Directo</h2>
   <p class="section-subtitle">Elige el método que prefieras para comunicarte con nosotros</p>
@@ -81,41 +82,35 @@
         <i class="bx bx-envelope"></i>
       </div>
       <h3>Formulario de Contacto</h3>
-
-<form id="contact-form" action="https://formspree.io/f/mdkeqzdr" method="POST">
-  <div class="form-group">
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="from_name" required>
-  </div>
-
-  <div class="form-group">
-    <label for="email">Correo</label>
-    <input type="email" id="email" name="to_email" required />
-  </div>
+      <form id="contact-form" action="https://formspree.io/f/mdkeqzdr" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="from_name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="to_email" required />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          <i class="bx bx-paper-plane"></i> Enviar Mensaje
+        </button>
+        <div id="respuesta" class="hidden-message" style="display: none;">
+          Gracias por tu mensaje. ¡Te responderemos pronto!
+        </div>
+      </form>
+    </div>
   
-  <div class="form-group">
-    <label for="mensaje">Mensaje</label>
-    <textarea id="mensaje" name="message" required></textarea>
-  </div>
-
-  <button type="submit" class="btn-submit">
-    <i class="bx bx-paper-plane"></i> Enviar Mensaje
-  </button>
-  <div id="respuesta" class="hidden-message" style="display: none;">
-    Gracias por tu mensaje. ¡Te responderemos pronto!
-  </div>
-</form>
-
-    
-
     <!-- Medios de contacto -->
     <div class="contact-card">
       <div class="card-icon">
         <i class="bx bx-phone-call"></i>
       </div>
       <h3>Contacto Directo</h3>
-
-      <!-- Teléfono -->
+      <!-- ... tus enlaces de contacto aquí ... -->
       <a href="tel:+526642819751" class="contact-method" style="text-decoration: none; color: inherit;">
         <div class="icon">📞</div>
         <div class="info">
@@ -138,7 +133,7 @@
         <div class="icon">💬</div>
         <div class="info">
           <h4>WhatsApp</h4>
-          <p>+52 (664) 678-75522</p>
+          <p>+52 (664) 678-7522</p>
         </div>
       </a>
 
@@ -157,10 +152,8 @@
         <div class="info">
           <h4>Atención</h4>
           <p>24/7</p>
-        </div>
-      </div>
-
     </div>
+  </div>  
   </div>
 </section>
 
