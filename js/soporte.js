@@ -70,3 +70,20 @@ document.addEventListener('DOMContentLoaded', () => {
     prevScrollPos = currentScrollPos;
   };
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const faqs = document.querySelectorAll(".faq-item");
+
+  faqs.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+      item.classList.toggle("active");
+      answer.style.maxHeight = item.classList.contains("active") ? answer.scrollHeight + "px" : null;
+    });
+
+    answer.style.maxHeight = null;
+  });
+});
