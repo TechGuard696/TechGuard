@@ -66,3 +66,27 @@ window.onscroll = function() {
   }
   prevScrollPos = currentScrollPos;
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  const faqs = document.querySelectorAll(".faq-item");
+
+  faqs.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+      // Alterna clase activa
+      item.classList.toggle("active");
+
+      // Mostrar u ocultar la respuesta
+      if (item.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+
+    // Inicialmente ocultar todas las respuestas
+    answer.style.maxHeight = null;
+  });
+});
