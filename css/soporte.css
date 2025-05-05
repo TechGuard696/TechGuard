@@ -985,4 +985,25 @@ cursor: pointer;
       gap: 2rem;
     }
 
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 0.95rem;
+  padding: 0.6rem 0.9rem;
+}
+
     
