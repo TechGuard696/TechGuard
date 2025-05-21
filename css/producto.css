@@ -10,6 +10,28 @@
     font-size: 2rem;  /* Puedes ajustar este valor */
     line-height: 1.2;
 }
+.package-images {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    padding: 0 1rem;
+}
+
+.empaque-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.empaque-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
 
 html, body {
     overflow-x: hidden;
