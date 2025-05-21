@@ -17,70 +17,69 @@ html, body {
 
 /* Navbar informativo del footer estilo TechGuard */
 .navbar-custom {
-  background-color: #0f111a; /* fondo oscuro similar a header */
-  padding: 40px 100px;
-  color: #e0e6f1; /* gris claro */
-  font-family: 'Poppins', sans-serif;
-}
-
-.navbar-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.navbar-nav {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  gap: 40px;
-}
-
-.navbar-item {
-  position: relative;
-  min-width: 180px;
-}
-
-.navbar-item .nav-link {
-  font-weight: 600;
-  color: #3a82f7; /* azul TechGuard */
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 18px;
-  display: inline-block;
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
-}
-
-.navbar-item .nav-link:hover {
-  color: #70a3ff; /* azul claro para hover */
-}
-
-/* Submenú */
-.sub-menu {
-  display: block;
-  padding-left: 0;
-  margin: 0;
-}
-
-.sub-menu li {
-  list-style: none;
-  margin: 6px 0;
-}
-
-.sub-menu li a {
-  color: #a8b1cc; /* gris azulado suave */
-  font-size: 15px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.sub-menu li a:hover {
-  color: #3a82f7; /* azul TechGuard */
-}
-
+    background-color: #000000; /* fondo oscuro similar a header */
+    padding: 40px 100px;
+    color: #e0e6f1; /* gris claro */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+  }
+  
+  .navbar-item {
+    position: relative;
+    min-width: 180px;
+  }
+  
+  .navbar-item .nav-link {
+    font-weight: 600;
+    color: #0501ff; /* azul TechGuard */
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-item .nav-link:hover {
+    color: #70a3ff; /* azul claro para hover */
+  }
+  
+  /* Submenú */
+  .sub-menu {
+    display: block;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .sub-menu li {
+    list-style: none;
+    margin: 6px 0;
+  }
+  
+  .sub-menu li a {
+    color: #a8b1cc; /* gris azulado suave */
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .sub-menu li a:hover {
+    color: #3a82f7; /* azul TechGuard */
+  }
 /* Encabezado final */
 .encabezado {
   background-color: #080a14; /* un poco más oscuro */
